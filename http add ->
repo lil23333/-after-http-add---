@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<title>just learning</title>
+<link rel = 'stylesheet' href="index11.css">
+</head>
+<body>
+    <a >not a link</a>
+    <br>
+    <a href='http://132'>http://</a>
+    <br>
+    <a href='http://123'>http://</a>
+    <br>
+<button>click</button>
+    <script>
+    let link = document.querySelectorAll('a');
+let btn = document.querySelector('button');
+function func () {
+       for (let i = 0; i < link.length; i++) {
+        if (link[i].href.indexOf('http://') === 0) {
+        link[i].innerHTML = link[i].innerHTML + '&rarr;';
+   }
+       }
+    }
+
+   
+
+btn.addEventListener('click', func);
+
+    </script>   
+    
+    
+</body>
+</html>
